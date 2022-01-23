@@ -1,0 +1,356 @@
+@charset "UTF-8";
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+
+/*** common setting ***/
+html{
+    scroll-behavior: smooth;
+}
+
+body,a {
+    color: #515151;
+}
+
+h1 {
+    font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", 
+                "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+    color: #FFF;
+    font-size: 3rem;
+    letter-spacing: 0.2rem;
+    text-shadow: 0 0 5px rgba(31,50,53,0.8), 0 0 5px rgba(31,50,53,0.3);
+    margin: 0;
+}
+
+h2 {
+    font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3",
+                "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+    font-size: 2.6rem;
+    letter-spacing: 0.5rem;
+}
+
+#h2-1{
+    color: white;
+}
+
+#h2-2{
+    color: black;
+}
+
+#h2-3{
+    color: white;
+}
+
+a:hover {
+    opacity: 0.6;
+}
+.contentWrapper {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2.1rem 0;
+}
+
+/** header **/
+#header1{
+    background-image: url(../img/event1top.jpg);
+    height: 590px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#header2{
+    background-image: url(../img/event2top.jpg);
+    height: 590px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#header3{
+    background-image: url(../img/event3top.jpg);
+    height: 590px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+header .contentWrapper {
+    padding-top: 300px;
+}
+
+/** about us **/
+#aboutus{
+    background-color: black;
+}
+
+#aboutus p {
+    font-size: 1.2rem;
+    line-height: 2.6rem;
+    color: white;
+}
+
+/** topics **/
+#topics {
+    background-image: url(../img/event-sub-b.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#topics figcaption {
+    font-size: 0.8rem;
+}
+#topics .flexcontent {
+    flex-basis: 30%; 
+    flex-grow: 1;
+}
+#topics .flexcontent p {
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 0.95rem;
+    line-height: 160%;
+}
+#topics figure img {
+    width: 100%; 
+}
+
+/** news **/
+#news{
+    background-color: black;
+}
+
+#news dl {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/** footer **/
+#bottomFooter {
+    background-color: #343434;
+    text-align: center;
+}
+
+/*一番下文字*/
+small {
+    color: #FFF;
+    font-weight: bold;
+    padding: 20px;
+    display: block;
+}
+
+/*Performer横並び*/
+.flex {
+    display: flex;
+}
+.clearfix::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.my-parts {
+    background: transparent;
+    padding: .4em .8em;
+    margin: 0 0 1em;
+    color:white;
+    font-size: 25px;
+    font-weight: bold;
+    border-left: .2083em solid #2196F3;
+    border-bottom: .084em dotted #eee;
+    text-align: left;
+    
+}
+
+.p1{
+    text-align: center;
+    font-size: 22px;
+    color: white;
+}
+
+#op{
+    box-shadow:0 0 10px 0 #ccc;
+    margin-top:45px;
+    margin-bottom: 45px;
+    padding-top:25px;
+    padding-right:20px;
+    padding-bottom:20px;
+    padding-left:25px;
+    background-color: rgba(118,123,133,0.3)
+}
+
+@media screen and (max-width: 480px) {
+/* この中がスマホ向けCSS */
+    /*** common setting ***/
+    img {
+        border: 0;
+        max-width: 100%;
+        height: auto;
+    }
+    .contentWrapper {
+        width: 90%;
+    }
+    .contentWrapper img {
+        width: 60%;
+    }
+    h1 {
+        font-size: 1.3rem;
+    }
+    h2 {
+        font-size: 1.3rem;
+    }
+    /*** individual setting ***/
+    /** header **/
+    header {
+        height: 300px;
+    }
+    header .contentWrapper {
+        width: 100%;
+        padding-top: 8rem;
+    }
+    header nav {
+        background: rgba(255,255,255,0.85);
+        position: fixed;
+        z-index: 1;
+        display: none;
+        width: 100%;
+        top: 55px;
+    }
+    header nav ul {
+        display: block;
+        padding: 20px 0 12rem 0;
+    }
+    header nav li {
+        font-size: 0.85rem;
+        padding: 20px;
+        color: #606060;
+        border-bottom: 1px solid rgba(118,123,133,0.3);
+        text-align: center;
+    }
+    header nav a {
+        color: #333;
+        font-weight: normal;
+        text-shadow: none;
+    }
+    header nav a:hover {
+        color: #1861ae!important;
+    }
+    
+    .my-parts img:hover {
+        cursor: pointer;
+        transform: scale(1.5, 1.5);
+    }
+
+    #menuWrapper {
+        width: 100%;
+        background: rgba(255,255,255,0.85);
+        padding: 15px 15px 10px 15px;
+        box-sizing: border-box;
+        position: fixed;
+        z-index: 1;
+    }
+    .trigger,.trigger span {
+        display: inline-block;
+        transition: all .4s;
+        box-sizing: border-box;
+    }
+    .trigger {
+        position: relative;
+        width: 35px;
+        height: 30px;
+    }
+    .trigger span {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 5px;
+        background-color: #718085;
+        border-radius: 4px;
+        opacity: 1;
+    }
+    .trigger a:hover {
+        opacity: 1;
+    }
+    .trigger span:nth-of-type(1) {
+        top: 0;
+    }
+    .trigger span:nth-of-type(2) {
+        top: 12px;
+    }
+    .trigger span:nth-of-type(3) {
+        bottom: 0;
+    }
+    .trigger.active span:nth-of-type(1) {
+        -webkit-transform:translateY(10px) rotate(-45deg);
+        transform: translateY(10px) rotate(-45deg);
+    }
+    .trigger.active span:nth-of-type(2) {
+        left: 50%;
+        opacity: 0;
+        -webkit-animation:active-menu-bar02 .8s forwards;
+        animation: active-menu-bar02 .8s forwards;
+    }
+    @-webkit-keyframes active-menu-bar02 { 100% { height: 0; }}
+    @keyframes active-menu-bar02 { 100% { height: 0; }}
+    .trigger.active span:nth-of-type(3) {
+        -webkit-transform:translateY(-15px) rotate(45deg);
+        transform: translateY(-15px) rotate(45deg);
+    }
+    .onanimation {
+        display: block;
+    }
+
+    /** about us **/
+    #aboutus p {
+        font-size: 0.75rem;
+        line-height: 1.6rem;
+    }
+
+    /** topics **/
+    #topics .flexcontent p {
+        margin: 0 auto 3rem auto;
+    }
+    #topics figcaption {
+        font-size: 0.65rem;
+    }
+
+    /** news **/
+    #news dt {
+        width: 100%;
+        padding: 10px 0;
+    }
+    #news dd {
+        width: 100%;
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    /** gallery **/
+    #gallery p {
+        font-size: 1rem;
+    }
+
+    /** footer **/
+    #upperFooter .contentWrapper,footer nav {
+        width: 100%;
+    }
+    #upperFooter li {
+        flex-grow: 1;
+        flex-basis: auto;
+        border-bottom: 1px solid #c0c0c0;
+        padding: 1rem 0;
+    }
+    #upperFooter li first-child {
+        border-top: 1px solid #c0c0c0;
+    }
+    /*** adjust parts ***/
+    .flex {
+        display: block;
+    }
+}
+
+::-webkit-scrollbar {
+    display: none;
+    -webkit-appearance: none;
+}
